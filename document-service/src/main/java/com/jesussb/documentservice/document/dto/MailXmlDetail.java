@@ -15,12 +15,12 @@ public class MailXmlDetail {
     @JacksonXmlProperty(localName = "DescItem")
     private String description;
     @JacksonXmlProperty(localName = "QtyItem")
-    private int quantity;
+    private double quantity;
     @JacksonXmlProperty(localName = "UnmdItem")
     private String unit;
     @JacksonXmlProperty(localName = "PrcItem")
-    private int price;
+    private double price;
     @JacksonXmlProperty(localName = "MontoItem")
-    private int amout;
+    private double amout;
 
 }

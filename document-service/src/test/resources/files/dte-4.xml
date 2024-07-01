@@ -1,0 +1,61 @@
+<DTE>
+    <Documento ID="DTE_12345678-9_52_100004_X">
+        <Encabezado>
+            <IdDoc>
+                <TipoDTE>52</TipoDTE>
+                <Folio>100004</Folio>
+                <FchEmis>2024-06-10</FchEmis>
+                <IndTraslado>1</IndTraslado>
+            </IdDoc>
+            <Emisor>
+                <RUTEmisor>12345678-9</RUTEmisor>
+                <RznSoc>EMPRESA DE PRUEBA LIMITADA</RznSoc>
+                <GiroEmis>COMERCIO DE PRUEBA</GiroEmis>
+                <Acteco>999999</Acteco>
+                <DirOrigen>CALLE FICTICIA 123</DirOrigen>
+                <CmnaOrigen>COMUNA DE PRUEBA</CmnaOrigen>
+                <CiudadOrigen>CIUDAD DE PRUEBA</CiudadOrigen>
+            </Emisor>
+            <Receptor>
+                <RUTRecep>65432109-8</RUTRecep>
+                <RznSocRecep>CLIENTE DE PRUEBA SPA</RznSocRecep>
+                <GiroRecep>ACTIVIDAD EJEMPLAR</GiroRecep>
+                <DirRecep>CALLE EJEMPLAR 654</DirRecep>
+                <CmnaRecep>COMUNA MODELO</CmnaRecep>
+                <CiudadRecep>CIUDAD MODELO</CiudadRecep>
+            </Receptor>
+            <Totales>
+                <MntNeto>85000</MntNeto>
+                <TasaIVA>19.0</TasaIVA>
+                <IVA>16150</IVA>
+                <MntTotal>101150</MntTotal>
+            </Totales>
+        </Encabezado>
+        <Detalle>
+            <NroLinDet>1</NroLinDet>
+            <CdgItem>
+                <TpoCodigo>STU</TpoCodigo>
+                <VlrCodigo>98765</VlrCodigo>
+            </CdgItem>
+            <NmbItem>PRODUCTO DE PRUEBA 7</NmbItem>
+            <DscItem>Descripción del producto de prueba 7</DscItem>
+            <QtyItem>7.0</QtyItem>
+            <UnmdItem>UNIDAD</UnmdItem>
+            <PrcItem>3000.0</PrcItem>
+            <MontoItem>21000</MontoItem>
+        </Detalle>
+        <Detalle>
+            <NroLinDet>2</NroLinDet>
+            <CdgItem>
+                <TpoCodigo>VWX</TpoCodigo>
+                <VlrCodigo>43210</VlrCodigo>
+            </CdgItem>
+            <NmbItem>PRODUCTO DE PRUEBA 8</NmbItem>
+            <DscItem>Descripción del producto de prueba 8</DscItem>
+            <QtyItem>21.0</QtyItem>
+            <UnmdItem>UNIDAD</UnmdItem>
+            <PrcItem>3047.6</PrcItem>
+            <MontoItem>63999.6</MontoItem>
+        </Detalle>
+    </Documento>
+</DTE>

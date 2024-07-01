@@ -18,19 +18,19 @@ public class MailReader {
     public List<String> getMailSupplierAttachments(MailSupplier mailSupplier) {
 
         Properties props = new Properties();
-        props.put("mail.imap.host", mailSupplier.getHost());
-        props.put("mail.imap.port", mailSupplier.getPort());
+        props.put("mail.imaps.host", mailSupplier.getHost());
+        props.put("mail.imaps.port", mailSupplier.getPort());
         props.put("mail.imap.starttls.enable", "true");
 
         Session session = Session.getDefaultInstance(props);
 
-        Store store = session.getStore("imap");
+        Store store = session.getStore("imaps");
         store.connect(mailSupplier.getHost(), mailSupplier.getMailAddress(), mailSupplier.getPassword());
 
         Folder folder = store.getFolder("INBOX");
         folder.open(Folder.READ_WRITE);
 
-        List<String> attachments = Arrays.stream(folder.getMessages(1, 100))
+        List<String> attachments = Arrays.stream(folder.getMessages(1, 20))
                 .filter(this::isMultipart)
                 .map(message -> {
 
